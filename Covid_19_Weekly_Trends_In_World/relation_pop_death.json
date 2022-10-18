@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "The relationship between total population and deaths",
   "data": {
-    "url": "https://raw.githubusercontent.com/junmoxiaoDake/junmoxiao/master/Covid_19_Weekly_Trends_In_World/covid_world_weekly_trend.csv"
+    "url": "https://raw.githubusercontent.com/HaiyangWangNeil/DataVisualisation/main/Covid_19_Weekly_Trends_In_World/covid_world_weekly_trend.csv"
   },
   "width": 450,
   "height": 300,

@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "Deaths in the last 7 days",
     "data": {
-        "url": "https://raw.githubusercontent.com/junmoxiaoDake/junmoxiao/master/Covid_19_Weekly_Trends_In_World/appear_death.csv"
+        "url": "https://raw.githubusercontent.com/HaiyangWangNeil/DataVisualisation/main/Covid_19_Weekly_Trends_In_World/appear_death.csv"
     },
     "mark": "bar",
     "encoding": {

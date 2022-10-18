@@ -4,7 +4,7 @@
   "width": 450,
   "height": 300,
   "data": {
-    "url": "https://raw.githubusercontent.com/junmoxiaoDake/junmoxiao/master/Covid_19_Weekly_Trends_In_World/top_10_country.csv"
+    "url": "https://raw.githubusercontent.com/HaiyangWangNeil/DataVisualisation/main/Covid_19_Weekly_Trends_In_World/top_10_country.csv"
   },
   "mark": {"type": "arc", "innerRadius": 70},
   "encoding": {
