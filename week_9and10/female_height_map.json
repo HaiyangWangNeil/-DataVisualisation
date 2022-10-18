@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "The height of Female in the world",
   "data": {
-    "url": "https://raw.githubusercontent.com/junmoxiaoDake/junmoxiao/master/week_9and10/Height%20of%20Male%20and%20Female%20by%20Country%202022.csv"
+    "url": "https://raw.githubusercontent.com/HaiyangWangNeil/DataVisualisation/main/week_9and10/Height%20of%20Male%20and%20Female%20by%20Country%202022.csv"
   },
   "mark": "bar",
   "encoding": {

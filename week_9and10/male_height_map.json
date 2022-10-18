@@ -4,7 +4,7 @@
   "width": 600,
   "height": 600,
   "data": {
-    "url": "https://raw.githubusercontent.com/junmoxiaoDake/junmoxiao/master/week_9and10/ne_110m_countries.topojson",
+    "url": "https://raw.githubusercontent.com/HaiyangWangNeil/DataVisualisation/main/week_9and10/ne_110m_countries.topojson",
     "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
   },
   "transform": [
@@ -12,7 +12,7 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/junmoxiaoDake/junmoxiao/master/week_9and10/Height%20of%20Male%20and%20Female%20by%20Country%202022.csv"
+          "url": "https://raw.githubusercontent.com/HaiyangWangNeil/DataVisualisation/main/week_9and10/Height%20of%20Male%20and%20Female%20by%20Country%202022.csv"
         },
         "key": "Country_Name",
         "fields": ["Male_Height_in_Cm"]
