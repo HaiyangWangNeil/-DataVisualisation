@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+        <script type="text/javascript">
+            let spec = "Covid_map.json"
+            vegaEmbed('#map', spec).then( (result) => {
+            }).catch(console.error);
+
+
+            var vis4= "top_10_radial_chart.json";
+            vegaEmbed('#radial_chart',vis4).then(function(result){
+
+            }).catch(console.error);
+
+
+            var vg_barchart = "appear_death.json";
+            vegaEmbed('#bar_chart',vg_barchart).then(function(result){
+
+            }).catch(console.error);
+
+
+            var vg_relation = "relation_pop_death.json";
+            vegaEmbed('#point_chart',vg_relation).then(function(result){
+
+            }).catch(console.error);
+
+            var vg_line = "Line_chart.json";
+            vegaEmbed('#line_chart',vg_line).then(function(result){
+
+            }).catch(console.error);
+
+        </script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <!-- Importing Pure CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+
+    <body>
+        <div class="pure-g">
+            <div id="title" class="pure-u-1">
+                <h1>Covid-19 Weekly Trends In World - Latest Data</h1>
+            </div>
+        </div>
+
+        <div class="pure-g">
+            <div id="text1" class="pure-u-1">
+                <p>Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.The following visualization shows the current global COVID-19 data and the trend.By rationally using the visual map, we can intuitively understand the current situation of the global epidemic, and help professionals to judge the trend of the epidemic, so as to establish a better plan to deal with the epidemic.</p>
+            </div>
+        </div>
+
+        <div class="pure-g">
+            <div id="maptitle" class="pure-u-1">
+                <h2>Covid-19 Weekly Cases In World</h2>
+            </div>
+        </div>
+
+        <div class="pure-g">
+
+            <div id="map" class="pure-u-1"></div>
+            
+        </div>
+        <br />
+        <br />
+        <br />
+
+        <div class="pure-g">
+
+            <div class="pure-u-1-5"></div>
+            <div class="pure-u-1-4">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <p> From the graph on the right, we can see that Japan has the highest proportion of deaths in the last seven days, followed by the USA and S.Korea. The one with the smallest value is Taiwan.</p>
+            </div>
+            <div class="pure-u-1-12"></div>
+            <div id="radial_chart" class="pure-u-1-3"></div>
+            <div class="pure-u-1-6"></div>
+
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <div class="pure-g">
+
+            <div class="pure-u-1-5"></div>
+            <div id="bar_chart" class="pure-u-1-4"></div>
+            <div class="pure-u-1-12"></div>
+            <div class="pure-u-1-3">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <p> The figure on the left shows the number of deaths in different countries within 7 days. We can see from the global perspective, we can conclude that the epidemic still has a certain lethality to human beings, and we still need to keep a certain level of vigilance against such phenomena.</p>
+            </div>
+            <div class="pure-u-1-6"></div>
+
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <div class="pure-g">
+
+            <div class="pure-u-1-5"></div>
+            <div class="pure-u-1-4">
+                <br />
+                <p> As shown in the scatter plot, we can see that the relationship between the number of deaths in the past seven days and the population of the country itself is that a large number of deaths occurred mainly in countries with small populations. For example, Japan, which has a relatively high death rate, does not have the highest population in the world itself, but it has been among the highest for the past seven days, which highlights how the number of COVID-19 deaths in a country depends more on other factors than on the total number of people.</p>
+            </div>
+            <div class="pure-u-1-12"></div>
+            <div id="point_chart" class="pure-u-1-3"></div>
+            <div class="pure-u-1-6"></div>
+
+        </div>
+
+
+        <br />
+        <br />
+        <br />
+
+        <div class="pure-g">
+
+            <div class="pure-u-1-5"></div>
+            <div id="line_chart" class="pure-u-1-4"></div>
+            <div class="pure-u-1-12"></div>
+            <div class="pure-u-1-3">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <p>As can be seen from the line chart on the left, in the period from 2020.02 to 2021.06, the growth rate of the United States was the fastest, which was much faster than that of Japan at that time. It would have been unexpected at the time that Japan would now have the most cases.</p>
+            </div>
+            <div class="pure-u-1-6"></div>
+
+        </div>
+
+
+<!--        <div class="pure-g">-->
+<!--            <div class="pure-u-1-6"></div>-->
+<!--            <div id="happiness" class="pure-u-1-2"></div>-->
+<!--        </div>  -->
+    </body>
+
+
+</html>

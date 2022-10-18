@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "The height of Female in the world",
+  "data": {
+    "url": "https://raw.githubusercontent.com/junmoxiaoDake/junmoxiao/master/week_9and10/Height%20of%20Male%20and%20Female%20by%20Country%202022.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "Country_Name",
+      "type": "nominal",
+      "title": "Name of Country"
+    },
+    "x": {
+      "field": "Female_Height_in_Cm",
+      "type": "quantitative",
+      "title": "Height of Female"
+    }
+  },
+  "config": {}
+}

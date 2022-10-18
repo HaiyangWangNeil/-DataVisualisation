@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "The relationship between total population and deaths",
+  "data": {
+    "url": "https://raw.githubusercontent.com/junmoxiaoDake/junmoxiao/master/Covid_19_Weekly_Trends_In_World/covid_world_weekly_trend.csv"
+  },
+  "width": 450,
+  "height": 300,
+  "mark": "circle",
+  "encoding": {
+    "x": {
+      "field": "Population",
+      "type": "quantitative",
+      "title": "The total population of each country"
+    },
+    "y": {
+      "field": "Deaths_in_the_last_7_days",
+      "type": "quantitative",
+      "title": "Deaths in the last 7 days"
+    },
+    "tooltip": [
+      {
+        "field": "Population",
+        "type": "quantitative",
+        "title": "Population"
+      },{
+        "field": "Deaths_in_the_last_7_days",
+        "type": "quantitative",
+        "title": "Number of Deaths"
+      },
+      {"field": "Country", "type": "nominal", "title": "Country"}
+    ]
+  },
+  "config": {}
+}

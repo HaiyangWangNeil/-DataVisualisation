@@ -1,0 +1,36 @@
+body{
+    background-color: #fffaec;
+}
+
+#title{
+	text-align: center;
+    font-family: "Helvetica";
+    font-weight: bold;
+    font-size: large;
+}
+
+#maptitle{
+	text-align: center;
+    font-family: "Helvetica";
+}
+
+#text1{
+    font-family: "Helvetica";
+    margin-top: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#map{
+    font-family: "Helvetica";
+    background-color: #fffaec;
+    text-align: center;
+}
+
+
+#bar_chart{
+    max-height: 400px;
+    overflow: scroll;
+}

@@ -1,0 +1,10 @@
+﻿Country,Cases_in_the_last_7_days,Cases_in_the_preceding_7_days,Weekly_Case_%_Change,Cases_in_the_last_7_days/1M_pop,Deaths_in_the_last_7_days,Deaths_in_the_preceding_7_days,Weekly_Death_%_Change,Deaths_in_the_last_7_days/1M_pop,Population
+Japan,1416905,1112517,27,11275,754,330,128,6,125671231
+USA,630356,919852,-31,0,1870,2773,-33,0,0
+S. Korea,585675,485171,21,11403,177,142,25,3,51360968
+Germany,446169,603706,-26,5290,815,774,5,10,84341285
+Italy,351248,473649,-26,5827,1165,1019,14,19,60276909
+France,290324,462520,-37,4427,601,700,-14,9,65573982
+Australia,290043,322924,-10,11106,657,510,29,25,26115548
+Brazil,229820,262568,-12,1065,1500,1634,-8,7,215703263
+Taiwan,155543,162844,-4,6506,308,425,-28,13,23906450

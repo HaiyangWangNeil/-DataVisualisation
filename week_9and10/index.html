@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+  
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+
+
+  <title>week 9 & 10 homework</title>
+</head>
+<body>
+<h1>week 9 & 10 homework</h1>
+
+<!--<div id="try"></div>-->
+
+<div id = "container">
+  <div class = "col1">
+    <h2>Chart 1 </h2>
+    <div id = "male_map"></div>
+  </div>
+  <div class = "col2">
+    <h2>Chart 2</h2>
+    <div id = "female_map" ></div>
+  </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+
+  var vg_map = "male_height_map.json";
+  vegaEmbed("#male_map", vg_map, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+
+
+  var vg_map_2 = "female_height_map.json";
+  vegaEmbed("#female_map", vg_map_2, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+
+</script>
+
+</body>
+</html>

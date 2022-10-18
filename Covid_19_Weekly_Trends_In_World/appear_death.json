@@ -1,0 +1,29 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Deaths in the last 7 days",
+    "data": {
+        "url": "https://raw.githubusercontent.com/junmoxiaoDake/junmoxiao/master/Covid_19_Weekly_Trends_In_World/appear_death.csv"
+    },
+    "mark": "bar",
+    "encoding": {
+        "y": {
+            "field": "Country",
+            "type": "nominal",
+            "title": "Name of Country"
+        },
+        "x": {
+            "field": "Deaths_in_the_last_7_days",
+            "type": "quantitative",
+            "title": "Number of Deaths"
+        },
+        "tooltip": [
+            {
+                "field": "Deaths_in_the_last_7_days",
+                "type": "quantitative",
+                "title": "Number of Deaths"
+            },
+            {"field": "Country", "type": "nominal", "title": "Country"}
+        ]
+    },
+    "config": {}
+}

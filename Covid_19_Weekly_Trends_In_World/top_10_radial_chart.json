@@ -1,0 +1,23 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Top 10 infected countries in the world",
+  "width": 450,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/junmoxiaoDake/junmoxiao/master/Covid_19_Weekly_Trends_In_World/top_10_country.csv"
+  },
+  "mark": {"type": "arc", "innerRadius": 70},
+  "encoding": {
+    "theta": {"field": "Cases_in_the_last_7_days", "type": "quantitative"},
+    "color": {"field": "Country", "type": "nominal"},
+    "tooltip": [
+      {
+        "field": "Cases_in_the_last_7_days",
+        "type": "quantitative",
+        "title": "Number of cases"
+      },
+      {"field": "Country", "type": "nominal", "title": "Country"}
+    ]
+  },
+  "config": {}
+}

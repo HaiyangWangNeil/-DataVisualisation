@@ -1,0 +1,84 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Country infection trends from 2020.01 to 2021.06",
+  "data": {
+    "url": "https://raw.githubusercontent.com/junmoxiaoDake/junmoxiao/master/Covid_19_Weekly_Trends_In_World/top_3_progress_country.csv"
+  },
+  "width": 300,
+  "height": 300,
+  "layer": [
+    {
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "ordinal",
+          "title": "Date(2020.02 to 2021.06)"
+        },
+        "y": {
+          "field": "total_cases",
+          "type": "quantitative",
+          "title": "Number of cases"
+        },
+        "color": {"field": "location", "type": "nominal", "title": "Country"}
+      },
+      "layer": [
+        {"mark": "line"},
+        {
+          "params": [
+            {
+              "name": "label",
+              "select": {
+                "type": "point",
+                "encodings": ["x"],
+                "nearest": true,
+                "on": "mouseover"
+              }
+            }
+          ],
+          "mark": "point",
+          "encoding": {
+            "opacity": {
+              "condition": {"param": "label", "empty": false, "value": 1},
+              "value": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "transform": [{"filter": {"param": "label", "empty": false}}],
+      "layer": [
+        {
+          "mark": {"type": "rule", "color": "gray"},
+          "encoding": {
+            "x": {"type": "temporal", "field": "date", "aggregate": "min"}
+          }
+        },
+        {
+          "encoding": {
+            "text": {"type": "quantitative", "field": "price"},
+            "x": {"type": "temporal", "field": "date"},
+            "y": {"type": "quantitative", "field": "price"}
+          },
+          "layer": [
+            {
+              "mark": {
+                "type": "text",
+                "stroke": "white",
+                "strokeWidth": 2,
+                "align": "left",
+                "dx": 5,
+                "dy": -5
+              }
+            },
+            {
+              "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
+              "encoding": {"color": {"type": "nominal", "field": "symbol"}}
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "config": {}
+}

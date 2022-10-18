@@ -1,0 +1,16 @@
+#bar_chart{
+	max-height: 400px;
+	overflow: scroll;
+}
+.col1{
+	width : 50%;
+	float : left ;
+}
+.col2{
+	width : 50%;
+	float : right ;
+}
+#female_map{
+	height:550px;
+	overflow-y:auto;
+}
